@@ -4,11 +4,11 @@
 `
 #### Билдим и запускаем докер контейнер
 
-`docker-compose up -d
-`
+`make up`
+
 #### Заходим в контейнер
 
-`docker-compose exec sr-app bash`
+`make connect`
 
 #### Устанавливаем пакеты композера
 
