@@ -15,6 +15,7 @@ services:
       - 80:80
     volumes:
       - ./:/app:delegated
+    user: '1000:1002'
     environment:
       WEB_DOCUMENT_ROOT: /app/public
     depends_on:
