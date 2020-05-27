@@ -14,6 +14,9 @@ remove: ## This will run `docker-compose down --rmi all -v`
 connect: ## This will run `docker-compose exec app bash`
 	docker-compose exec app bash
 
+root-connect: ## This will run `docker-compose exec -u root app bash`
+	docker-compose exec -u root app bash
+
 build: ## This will run `docker-compose build app`
 	docker-compose build app
 
