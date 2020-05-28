@@ -2,8 +2,8 @@
 help: ## Show this help.
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
-up: ## This will run `docker-compose up -d --build`
-	docker-compose up -d --build
+up: ## This will run `docker-compose up -d`
+	docker-compose up -d
 
 down: ## This will run `docker-compose down`
 	docker-compose down
